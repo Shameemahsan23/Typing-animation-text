@@ -1,0 +1,40 @@
+*{
+    overflow: hidden;
+}
+body{
+    padding: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    color: goldenrod;
+    background-color: darkslategray;
+}
+.type{
+    position: relative;
+    margin: 0 auto;
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    width: 19em;
+    border-right: 2px solid wheat;
+    white-space: nowrap;
+    overflow-y: hidden;
+    transform: translateY(-50);
+}
+/* ///////////Animation_tywriter////////////// */
+
+.anim-type{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinktextcursor 500ms steps(44) infinite normal ;
+}
+@keyframes typewriter {
+    from{width: 0;}
+    to{ width: 19em;}
+}
+@keyframes blinktextcursor {
+    from{
+        border-right-color: #fff;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
